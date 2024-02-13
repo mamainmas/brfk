@@ -2,19 +2,26 @@ require("dotenv").config();
 import { fetchDataFromRoute } from "../index";
 
 document
-   .querySelectorAll("#add-starter")
+   .querySelectorAll(".mr-deals")
+   .forEach((x) => x.addEventListener("click", getMegaResaleStatus));
+
+document
+   .querySelectorAll(".add-vip")
    .forEach((x) => x.addEventListener("click", openAmountModal));
 document
-   .querySelectorAll("#add-basic")
+   .querySelectorAll(".add-starter")
    .forEach((x) => x.addEventListener("click", openAmountModal));
 document
-   .querySelectorAll("#add-bronze")
+   .querySelectorAll(".add-basic")
    .forEach((x) => x.addEventListener("click", openAmountModal));
 document
-   .querySelectorAll("#add-gold")
+   .querySelectorAll(".add-bronze")
    .forEach((x) => x.addEventListener("click", openAmountModal));
 document
-   .querySelectorAll("#add-premium")
+   .querySelectorAll(".add-gold")
+   .forEach((x) => x.addEventListener("click", openAmountModal));
+document
+   .querySelectorAll(".add-premium")
    .forEach((x) => x.addEventListener("click", openAmountModal));
 
 const planType = document.querySelector("#selected-plan-type");
@@ -53,7 +60,11 @@ async function addPlan(e) {
                document.querySelector("#user-amount").value
             ),
          },
-         null
+         document
+            .querySelector("#megaResalesAvailableModal")
+            .classList.contains("hidden")
+            ? null
+            : { isMegaResale: true }
       );
 
       console.log(response);
@@ -91,4 +102,20 @@ function displayErrorMessage(errorMsg) {
          break;
    }
    return errorMessage;
+}
+
+// const loaderContainer = document.getElementById("loaderContainer");
+
+async function getMegaResaleStatus() {
+   const response = await fetchDataFromRoute("users", "get", null, null);
+
+   if (response.user.isMegaResalesAvailable == true) {
+      document.querySelector("#trigger-mega-resales-btn").click();
+   } else {
+      document
+         .querySelector("#trigger-mega-resales-available-btn")
+         .click();
+   }
+
+   console.log(response.user.isMegaResalesAvailable);
 }
