@@ -2566,6 +2566,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-darkbg3 {
+  --tw-border-opacity: 1;
+  border-color: rgb(118 40 117 / var(--tw-border-opacity));
+}
+
 .border-r-transparent {
   border-right-color: transparent;
 }
@@ -3665,6 +3670,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .outline-white {
   outline-color: #fff;
+}
+
+.outline-darkbg3 {
+  outline-color: #762875;
 }
 
 .blur {

@@ -475,9 +475,9 @@
       </header>
 
       <div
-         class="w-10/12 mx-auto min-h-screen flex items-center justify-center bg-gray-100"
+         class="w-10/12 mx-auto min-h-screen flex items-center justify-center bg-transparent py-4"
       >
-         <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-lg">
+         <div class="max-w-md w-full bg-darkbg2 text-white p-6 rounded-lg shadow-lg">
             <form class="space-y-4">
                <div>
                   <label for="fullName" class="block">Full Name</label>
@@ -485,16 +485,18 @@
                      type="text"
                      id="fullName"
                      name="fullName"
-                     class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                     class="w-full p-2 rounded-md shadow-sm"
+                     disabled
                   />
                </div>
                <div>
-                  <label for="userName" class="block">Username</label>
+                  <label for="userID" class="block">User ID</label>
                   <input
                      type="text"
-                     id="userName"
-                     name="userName"
-                     class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                     id="userID"
+                     name="userID"
+                     class="w-full p-2 rounded-md shadow-sm"
+                     disabled
                   />
                </div>
                <div>
@@ -503,7 +505,8 @@
                      type="email"
                      id="email"
                      name="email"
-                     class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                     class="w-full p-2 rounded-md shadow-sm"
+                     disabled
                   />
                </div>
                <div>
@@ -514,7 +517,8 @@
                      type="tel"
                      id="phoneNumber"
                      name="phoneNumber"
-                     class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                     class="w-full p-2 rounded-md shadow-sm"
+                     disabled
                   />
                </div>
                <div>
@@ -523,10 +527,11 @@
                      type="text"
                      id="country"
                      name="country"
-                     class="w-full border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                     class="w-full p-2 rounded-md shadow-sm"
+                     disabled
                   />
                </div>
-               <div>
+               <!-- <div>
                   <label for="accountLevel" class="block"
                      >Account Level</label
                   >
@@ -539,15 +544,15 @@
                      <option value="premium">Premium</option>
                      <option value="enterprise">Enterprise</option>
                   </select>
-               </div>
-               <div>
+               </div> -->
+               <!-- <div>
                   <button
                      type="submit"
                      class="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
                   >
                      Submit
                   </button>
-               </div>
+               </div> -->
             </form>
          </div>
       </div>
@@ -568,5 +573,6 @@
       <script type="module" src="./src/tailwind-elements.js"></script>
       <script type="module" src="./src/custom-styles.js"></script>
       <script type="module" src="./src/index.js"></script>
+      <script type="module" src="./src/app/profile.js"></script>
    </body>
 </html>

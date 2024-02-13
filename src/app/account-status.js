@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", async (e) => {
 
    try {
       const { plans } = await fetchDataFromRoute("plans", "get");
+
+      if (plans.length < 1) {
+         loaderContainer.classList.add("hidden");
+         return;
+      }
       loaderContainer.classList.remove("hidden");
 
       for (const planName in plans) {
