@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body class="bg-darkbg font-Montserrat">
+    <main
+      class="mt-16 lg:mb-4 flex flex-col text-gray-100 mx-auto lg:ml-3 w-full space-y-2 lg:w-3/4"
+    >
+      <div class="w-11/12 mx-auto bg-neutral-200 dark:bg-neutral-600">
+        <div
+          id="gold-datatable"
+          class="w-11/12 mx- text-gray-800 bg-blue-400 dark:bg-neutral-600"
+        ></div>
+      </div>
+    </main>
+    <script
+      type="text/javascript"
+      src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+    ></script>
+    <script type="module" src="./src/tailwind-elements.js"></script>
+    <script type="module" src="./src/custom-styles.js"></script>
+    <script type="module" src="./src/insights/gold.js"></script>
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>

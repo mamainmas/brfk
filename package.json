@@ -1,0 +1,29 @@
+{
+   "name": "br-frontend",
+   "version": "1.0.0",
+   "description": "",
+   "scripts": {
+      "watch": "npx tailwindcss -i ./css/input.css -o ./css/index.css --watch",
+      "serve": "rmdir /s /q dist && npx parcel dashboard.html deposit.html login.html account-status.html funds.html marketing-landscape.html portfolio.html register.html withdrawal.html transactions.html"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "buffer": "^6.0.3",
+      "crypto-browserify": "^3.12.0",
+      "events": "^3.3.0",
+      "os-browserify": "^0.3.0",
+      "path-browserify": "^1.0.1",
+      "process": "^0.11.10",
+      "stream-browserify": "^3.0.0",
+      "tailwindcss": "^3.4.1"
+   },
+   "dependencies": {
+      "apexcharts": "^3.45.2",
+      "axios": "^1.6.7",
+      "dotenv": "^16.4.1",
+      "lodash": "^4.17.21",
+      "tw-elements": "^1.1.0"
+   }
+}
