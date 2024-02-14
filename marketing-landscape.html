@@ -13,6 +13,14 @@
       <link rel="stylesheet" href="./css/custom.css" />
    </head>
    <body class="font-Montserrat bg-darkbg2">
+      <div
+         class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex justify-center items-center"
+         id="loaderContainer"
+      >
+         <div
+            class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"
+         ></div>
+      </div>
       <header>
          <nav
             id="sidenav-1"
@@ -461,27 +469,9 @@
                data-te-ripple-init
                data-te-ripple-color="light"
             >
-               Traffic Source
+               Niches
             </button>
-            <!-- <ul
-            class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-            aria-labelledby="trafficSource"
-            data-te-dropdown-menu-ref
-          >
-            <li>
-              <button
-                type="button"
-                class="inline-block rounded bg-white px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-darkbg1 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                data-te-toggle="modal"
-                data-te-target="#trafficSource"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-              >
-                Traffic Source
-              </button>
-            </li>
-          </ul> -->
-            <!-- </div> -->
+
             <div class="relative" data-te-dropdown-ref>
                <button
                   class="flex items-center text-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
@@ -559,13 +549,23 @@
                   data-te-dropdown-menu-ref
                >
                   <li>
-                     <a
+                     <!-- <a
                         class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                         href="deposit.html"
                         data-te-target="#promotion"
                         data-te-dropdown-item-ref
                         >Advert Fee</a
+                     > -->
+                     <button
+                        type="button"
+                        class="inline-block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                        data-te-toggle="modal"
+                        data-te-target="#advertFeeSource"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
                      >
+                        Advert Fee
+                     </button>
                   </li>
                </ul>
             </div>
@@ -579,7 +579,7 @@
                   data-te-ripple-init
                   data-te-ripple-color="light"
                >
-                  Smart Link
+                  Links
                   <span class="ml-2 w-2">
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -999,7 +999,11 @@
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Technology</span>
+                     <a
+                        href="niches.html#technology-section"
+                        class="text-darkbg4"
+                        >Technology</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1016,7 +1020,11 @@
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Wealth Building</span>
+                     <a
+                        href="niches.html#wealth-building-section"
+                        class="text-darkbg4"
+                        >Wealth Building</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1033,7 +1041,11 @@
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Fashion</span>
+                     <a
+                        href="niches.html#fashion-section"
+                        class="text-darkbg4"
+                        >Fashion</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1047,11 +1059,14 @@
                         data-plan-type="fashion-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Education</span>
+                     <a
+                        href="niches.html#education-section"
+                        class="text-darkbg4"
+                        >Education</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1065,11 +1080,14 @@
                         data-plan-type="education-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Gaming</span>
+                     <a
+                        href="niches.html#gaming-section"
+                        class="text-darkbg4"
+                        >Gaming</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1083,11 +1101,14 @@
                         data-plan-type="gaming-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Home Decor</span>
+                     <a
+                        href="niches.html#home-decor-section"
+                        class="text-darkbg4"
+                        >Home Decor</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1101,11 +1122,14 @@
                         data-plan-type="home-decor-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Health and Wellness</span>
+                     <a
+                        href="niches.html#health-wellness-section"
+                        class="text-darkbg4"
+                        >Health and Wellness</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1119,11 +1143,14 @@
                         data-plan-type="health-wellness-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Finance</span>
+                     <a
+                        href="niches.html#finance-section"
+                        class="text-darkbg4"
+                        >Finance</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1137,11 +1164,14 @@
                         data-plan-type="finance-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Food</span>
+                     <a
+                        href="niches.html#food-section"
+                        class="text-darkbg4"
+                        >Food</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1155,11 +1185,14 @@
                         data-plan-type="food-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Gardening</span>
+                     <a
+                        href="niches.html#gardening-section"
+                        class="text-darkbg4"
+                        >Gardening</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1173,11 +1206,14 @@
                         data-plan-type="gardening-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Beauty and Cosmetics</span>
+                     <a
+                        href="niches.html#beauty-cosmetics-section"
+                        class="text-darkbg4"
+                        >Beauty and Cosmetics</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1191,11 +1227,12 @@
                         data-plan-type="beauty-cosmetics-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Art</span>
+                     <a href="niches.html#art-section" class="text-darkbg4"
+                        >Art</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1209,11 +1246,14 @@
                         data-plan-type="art-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Travel</span>
+                     <a
+                        href="niches.html#travel-section"
+                        class="text-darkbg4"
+                        >Travel</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1231,7 +1271,11 @@
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Sports</span>
+                     <a
+                        href="niches.html#sports-section"
+                        class="text-darkbg4"
+                        >Sports</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1245,11 +1289,14 @@
                         data-plan-type="sports-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Luxury</span>
+                     <a
+                        href="niches.html#luxury-section"
+                        class="text-darkbg4"
+                        >Luxury</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1263,11 +1310,14 @@
                         data-plan-type="luxury-cancel"
                      />
                   </li>
-
                   <li
                      class="flex flex-row w-11/12 justify-between items-center p-2"
                   >
-                     <span>Pets</span>
+                     <a
+                        href="niches.html#pets-section"
+                        class="text-darkbg4"
+                        >Pets</a
+                     >
                      <input
                         type="button"
                         value="Select"
@@ -1285,6 +1335,81 @@
             </div>
          </div>
       </div>
+      <div
+         data-te-modal-init
+         class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+         id="advertFeeSource"
+         tabindex="-1"
+         aria-labelledby="trafficSourceLabel"
+         aria-hidden="true"
+      >
+         <div
+            data-te-modal-dialog-ref
+            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]"
+         >
+            <div
+               class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600"
+            >
+               <div
+                  class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50"
+               >
+                  <!--Modal title-->
+                  <h5
+                     class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                     id="trafficSourceLabel"
+                  >
+                     Adverts
+                  </h5>
+                  <!--Close button-->
+                  <button
+                     type="button"
+                     class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                     data-te-modal-dismiss
+                     aria-label="Close"
+                  >
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-6 w-6"
+                     >
+                        <path
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           d="M6 18L18 6M6 6l12 12"
+                        />
+                     </svg>
+                  </button>
+               </div>
+
+               <!--Modal body-->
+               <div
+                  class="flex flex-col justify-center items-center w-full space-y-3 pb-3"
+               >
+                  <p class="text-center w-10/12">
+                     Ads help generate traffic and increase the reach of
+                     products and product links in your preferred traffic
+                     source zone. <br />Ads are necessary to boost your
+                     profit.
+                  </p>
+                  <button class="rounded-lg p-2 bg-darkbg1 text-white">
+                     Request Advert Fee
+                  </button>
+                  <a
+                     href="deposit.html"
+                     class="rounded-lg p-2 bg-darkbg1 text-white"
+                  >
+                     Ads Fee: $150 | Make Payment
+                  </a>
+                  <div class="mt-3"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script type="module" src="./src/app/verify-user.js"></script>
 
       <script
          type="text/javascript"
@@ -1293,5 +1418,6 @@
       <script type="module" src="./src/tailwind-elements.js"></script>
       <!-- <script type="module" src="./src/custom-styles.js"></script> -->
       <script type="module" src="./src/index.js"></script>
+      <script type="module" src="./src/app/marketing-landscape.js"></script>
    </body>
 </html>
