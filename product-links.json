@@ -1,0 +1,242 @@
+[
+   {
+      "category": "Technology",
+      "items": [
+         "Smartphones",
+         "Laptops",
+         "Wireless headphones",
+         "Smartwatches",
+         "Gaming consoles",
+         "Drones",
+         "Virtual reality headsets",
+         "Smart home devices",
+         "Wearable fitness trackers",
+         "Portable chargers"
+      ]
+   },
+   {
+      "category": "Wealth Building",
+      "items": [
+         "Investment courses",
+         "Stock trading platforms",
+         "Personal finance books",
+         "Cryptocurrency exchanges",
+         "Retirement planning services",
+         "Real estate investment guides",
+         "Financial coaching services",
+         "Passive income resources",
+         "Wealth management software",
+         "Affiliate marketing training programs"
+      ]
+   },
+   {
+      "category": "Fashion",
+      "items": [
+         "Dresses",
+         "Sneakers",
+         "Handbags",
+         "Watches",
+         "Sunglasses",
+         "Jewelry",
+         "Hats",
+         "Scarves",
+         "Jeans",
+         "Jackets"
+      ]
+   },
+   {
+      "category": "Education",
+      "items": [
+         "Online courses",
+         "Textbooks",
+         "Language learning apps",
+         "Tutoring services",
+         "Educational software",
+         "Certification programs",
+         "Study guides",
+         "College prep materials",
+         "Skill development workshops",
+         "Test prep courses"
+      ]
+   },
+   {
+      "category": "Gaming",
+      "items": [
+         "Video games",
+         "Gaming accessories (controllers, keyboards, mice)",
+         "Gaming monitors",
+         "Gaming chairs",
+         "Gaming headsets",
+         "Gaming keyboards",
+         "Gaming mice",
+         "Gaming laptops",
+         "Streaming equipment",
+         "In-game currency"
+      ]
+   },
+   {
+      "category": "Home Decor",
+      "items": [
+         "Furniture (sofas, tables, chairs)",
+         "Rugs",
+         "Curtains",
+         "Wall art",
+         "Lighting fixtures",
+         "Decorative pillows",
+         "Candles",
+         "Mirrors",
+         "Indoor plants",
+         "Throw blankets"
+      ]
+   },
+   {
+      "category": "Health and Wellness",
+      "items": [
+         "Vitamins and supplements",
+         "Yoga mats",
+         "Fitness trackers",
+         "Protein powders",
+         "Meditation apps",
+         "Workout equipment",
+         "Meal replacement shakes",
+         "Running shoes",
+         "Herbal teas",
+         "Massage guns"
+      ]
+   },
+   {
+      "category": "Finance",
+      "items": [
+         "Credit cards",
+         "Savings accounts",
+         "Investment platforms",
+         "Personal finance software",
+         "Budgeting apps",
+         "Tax preparation services",
+         "Insurance policies",
+         "Retirement accounts",
+         "Financial advisory services",
+         "Loans (personal, mortgage, student)"
+      ]
+   },
+   {
+      "category": "Food",
+      "items": [
+         "Meal delivery kits",
+         "Specialty spices",
+         "Gourmet chocolates",
+         "Organic snacks",
+         "Cooking utensils",
+         "Kitchen appliances",
+         "Superfood powders",
+         "Tea blends",
+         "Wine subscriptions",
+         "Artisanal cheeses"
+      ]
+   },
+   {
+      "category": "Gardening",
+      "items": [
+         "Seeds",
+         "Planters",
+         "Gardening tools (shovels, trowels, pruners)",
+         "Soil amendments",
+         "Watering cans",
+         "Garden gloves",
+         "Plant stands",
+         "Fertilizers",
+         "Outdoor furniture",
+         "Garden decorations"
+      ]
+   },
+   {
+      "category": "Beauty and Cosmetics",
+      "items": [
+         "Skincare products (cleansers, moisturizers, serums)",
+         "Makeup (foundation, lipstick, eyeshadow palettes)",
+         "Haircare products (shampoo, conditioner, styling tools)",
+         "Beauty tools (makeup brushes, sponges, eyelash curlers)",
+         "Perfumes and fragrances",
+         "Nail polish and manicure kits",
+         "Facial masks and treatments",
+         "Beauty supplements",
+         "Sunscreen and SPF products",
+         "Men's grooming products"
+      ]
+   },
+   {
+      "category": "Art",
+      "items": [
+         "Paintbrush sets",
+         "Canvas panels",
+         "Acrylic paints",
+         "Oil paints",
+         "Watercolor paints",
+         "Sketchbooks",
+         "Drawing pencils",
+         "Pastels",
+         "Sculpting clay",
+         "Art easels"
+      ]
+   },
+   {
+      "category": "Travel",
+      "items": [
+         "Luggage sets",
+         "Travel backpacks",
+         "Travel accessories (neck pillows, luggage tags, packing cubes)",
+         "Portable chargers",
+         "Travel-sized toiletries",
+         "Travel journals",
+         "Passport holders",
+         "Travel adapters",
+         "Guidebooks",
+         "Travel insurance"
+      ]
+   },
+   {
+      "category": "Sports",
+      "items": [
+         "Athletic shoes (running shoes, basketball shoes, cleats)",
+         "Sports equipment (basketballs, soccer balls, tennis rackets)",
+         "Activewear (sports bras, leggings, shorts)",
+         "Fitness trackers",
+         "Gym memberships",
+         "Sports supplements",
+         "Workout apparel (hoodies, tank tops, sweatpants)",
+         "Yoga mats",
+         "Cycling accessories (helmets, gloves, water bottles)",
+         "Sports watches"
+      ]
+   },
+   {
+      "category": "Luxury",
+      "items": [
+         "Designer handbags",
+         "Luxury watches",
+         "High-end fashion clothing",
+         "Luxury cars",
+         "Fine jewelry",
+         "Designer sunglasses",
+         "Luxury skincare products",
+         "Exclusive travel experiences",
+         "Luxury home goods",
+         "Premium champagne and spirits"
+      ]
+   },
+   {
+      "category": "Pets",
+      "items": [
+         "Pet food (dry food, wet food, treats)",
+         "Pet toys (plush toys, chew toys, interactive toys)",
+         "Pet beds",
+         "Cat trees and scratching posts",
+         "Dog crates and carriers",
+         "Leashes and collars",
+         "Grooming supplies (brushes, shampoos, nail clippers)",
+         "Pet clothing and accessories",
+         "Training tools (clickers, training pads, treat pouches)",
+         "Pet health products (vitamins, supplements, flea treatments)"
+      ]
+   }
+]

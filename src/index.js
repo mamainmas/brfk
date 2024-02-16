@@ -43,7 +43,6 @@ async function fetchDataFromRoute(
             };
       }
 
-
       const requestOptions = {
          method: String(requestType).toUpperCase(),
          headers,
@@ -67,7 +66,9 @@ async function fetchDataFromRoute(
 
       return await response.json();
    } catch (error) {
-      console.log(error);
+      if (String(error).split(": ").includes("No user with ID")) {
+         window.location.href = "login.html";
+      }
       throw error;
    }
 }

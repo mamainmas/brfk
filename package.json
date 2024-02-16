@@ -4,7 +4,7 @@
    "description": "",
    "scripts": {
       "watch": "npx tailwindcss -i ./css/input.css -o ./css/index.css --watch",
-      "serve": "rmdir /s /q dist && npx parcel dashboard.html niches.html deposit.html login.html account-status.html funds.html marketing-landscape.html portfolio.html register.html withdrawal.html transactions.html profile.html gold-insights.html"
+      "serve": "rmdir /s /q dist && npx parcel product-links.html dashboard.html niches.html deposit.html login.html account-status.html funds.html marketing-landscape.html portfolio.html register.html withdrawal.html transactions.html profile.html gold-insights.html"
    },
    "keywords": [],
    "author": "",

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Product Links</title>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Dashboard</title>
+
+      <link
+         rel="stylesheet"
+         href="./node_modules/apexcharts/dist/apexcharts.css"
+      />
+
+      <link rel="stylesheet" href="./css/index.css" />
+      <link rel="stylesheet" href="./css/fonts.css" />
+      <link rel="stylesheet" href="./css/custom.css" />
+   </head>
+   <body class="bg-gray-400 font-Montserrat">
+      <div
+         class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex justify-center items-center"
+         id="loaderContainer"
+      >
+         <div
+            class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"
+         ></div>
+      </div>
+
+      <div
+         class="h-full mx-auto flex flex-col mt-16 p-4 space-y-3 bg-gray-200 text-gray-950 rounded-md shadow-md w-11/12 md:w-3/4 lg:w-1/2"
+         id="collapseContainer"
+      ></div>
+
+      <script type="module" src="./src/app/verify-user.js"></script>
+      <script src="./node_modules/lodash/lodash.min.js"></script>
+      <script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
+      <script src="https://preline.co/assets/js/hs-apexcharts-helpers.js"></script>
+
+      <script
+         type="text/javascript"
+         src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+      ></script>
+      <script type="module" src="./src/home-charts.js"></script>
+      <script type="module" src="./src/home-charts-mobile.js"></script>
+      <script type="module" src="./src/pie-chart.js"></script>
+      <script type="module" src="./src/pie-chart-mobile.js"></script>
+      <script type="module" src="./src/tailwind-elements.js"></script>
+      <script type="module" src="./src/custom-styles.js"></script>
+      <script type="module" src="./src/index.js"></script>
+      <script type="module" src="./src/app/product-links.js"></script>
+   </body>
+</html>
