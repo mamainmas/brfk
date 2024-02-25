@@ -68,6 +68,7 @@ async function addPlan(e) {
       );
 
       console.log(response);
+      window.location.href = "account-status.html";
    } catch (error) {
       console.log(error);
       let errorMessage = error.message.replace("Error: ", "");
@@ -109,7 +110,7 @@ const loaderContainer = document.getElementById("loaderContainer");
 document.addEventListener("DOMContentLoaded", async () => {
    const accBal = document.querySelectorAll(".acc-bal");
    const affCap = document.querySelectorAll(".aff-cap");
-   // const affBal = document.querySelectorAll(".aff-bal");
+   const affBal = document.querySelectorAll(".aff-bal");
    const affEq = document.querySelectorAll(".aff-eq");
    const totWdrw = document.querySelectorAll(".tot-wdrw");
    const megaRs = document.querySelectorAll(".mega-rs");
@@ -118,10 +119,9 @@ document.addEventListener("DOMContentLoaded", async () => {
    const { user } = await fetchDataFromRoute("users", "get", null, null);
 
    const { MRP } = await fetchDataFromRoute("mrp", "get", null, null);
-   console.log(MRP)
+   console.log(MRP);
 
    const {
-      accountAffiliateBalance,
       accountAffiliateCapital,
       accountTotalWithdrawal,
       accountBalance,
@@ -138,9 +138,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
    megaRs.forEach((bal) => (bal.textContent = MRPBalance.toFixed(2)));
    accBal.forEach((bal) => (bal.textContent = accountBalance.toFixed(2)));
-   // affBal.forEach(
-   //    (bal) => (bal.textContent = accountAffiliateBalance.toFixed(2))
-   // );
+   affBal.forEach(
+      async (bal) =>
+         (bal.textContent = Number(
+            Number(await getAffiliateEquity()) + Number(MRPBalance)
+         ).toFixed(2))
+   );
    affEq.forEach(
       async (bal) =>
          (bal.textContent = Number(await getAffiliateEquity()).toFixed(2))
@@ -212,3 +215,8 @@ async function getMegaResaleStatus() {
 
    console.log(response.user.isMegaResalesAvailable);
 }
+
+module.exports = {
+   getAffiliateEquity,
+   // MRPBalance,
+};

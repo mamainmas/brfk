@@ -12,12 +12,13 @@ document.addEventListener("DOMContentLoaded", async (e) => {
 
    try {
       const { plans } = await fetchDataFromRoute("plans", "get");
+      console.log(plans);
 
       if (plans.length < 1) {
          loaderContainer.classList.add("hidden");
          return;
       }
-      loaderContainer.classList.remove("hidden");
+      loaderContainer.classList.add("hidden");
 
       for (const planName in plans) {
          if (plans.hasOwnProperty(planName)) {

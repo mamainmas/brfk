@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insights</title>
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Insights</title>
 
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/custom.css" />
-  </head>
-  <body class="bg-darkbg font-Montserrat">
-    <main
-      class="mt-16 lg:mb-4 flex flex-col text-gray-100 mx-auto lg:ml-3 w-full space-y-2 lg:w-3/4"
-    >
-      <div class="w-11/12 mx-auto bg-neutral-200 dark:bg-neutral-600">
-        <div
-          id="gold-datatable"
-          class="w-11/12 mx- text-gray-800 bg-blue-400 dark:bg-neutral-600"
-        ></div>
+      <link rel="stylesheet" href="./css/index.css" />
+      <link rel="stylesheet" href="./css/fonts.css" />
+      <link rel="stylesheet" href="./css/custom.css" />
+   </head>
+   <body class="bg-darkbg font-Montserrat mx-auto min-h-screen">
+      <div
+         class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex justify-center items-center"
+         id="loaderContainer"
+      >
+         <div
+            class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"
+         ></div>
       </div>
-    </main>
-    <script
-      type="text/javascript"
-      src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
-    ></script>
-    <script type="module" src="./src/tailwind-elements.js"></script>
-    <script type="module" src="./src/custom-styles.js"></script>
-    <script type="module" src="./src/insights/gold.js"></script>
-    <script type="module" src="./src/index.js"></script>
-  </body>
+      <main
+         class="mt-16 lg:mb-4 flex flex-col text-gray-100 mx-auto w-full space-y-2 lg:w-3/4"
+      >
+         <div class="w-11/12 mx-auto bg-transparent dark:bg-neutral-600">
+            <div
+               id="gold-datatable"
+               class="w-11/12 mx-auto text-gray-800 rounded-lg bg-blue-400 dark:bg-neutral-600"
+            ></div>
+         </div>
+      </main>
+
+      <!-- <footer class="mt-auto bg-gray-900 text-white py-4 sticky bottom-0">
+         
+      </footer> -->
+      <footer
+         class="fixed bottom-0 left-0 w-11/12 mx-auto bg-gray-600 text-white py-4 flex justify-center"
+      ></footer>
+
+      <script type="module" src="./src/app/verify-user.js"></script>
+      <script type="module" src="./src/page.js"></script>
+
+
+      <script
+         type="text/javascript"
+         src="./node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+      ></script>
+      <script type="module" src="./src/tailwind-elements.js"></script>
+      <script type="module" src="./src/custom-styles.js"></script>
+      <script type="module" src="./src/index.js"></script>
+      <script type="module" src="./src/insights/gold.js"></script>
+   </body>
 </html>

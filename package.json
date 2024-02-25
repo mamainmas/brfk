@@ -4,7 +4,8 @@
    "description": "",
    "scripts": {
       "watch": "npx tailwindcss -i ./css/input.css -o ./css/index.css --watch",
-      "serve": "rmdir /s /q dist && npx parcel product-links.html dashboard.html niches.html deposit.html login.html account-status.html funds.html marketing-landscape.html portfolio.html register.html withdrawal.html transactions.html profile.html gold-insights.html"
+      "serve": "rmdir /s /q dist && npx parcel 404.html product-links.html dashboard.html niches.html deposit.html login.html account-status.html funds.html marketing-landscape.html portfolio.html register.html withdrawal.html transactions.html profile.html gold-insights.html",
+      "build": "npx parcel build 404.html product-links.html dashboard.html niches.html deposit.html login.html account-status.html funds.html marketing-landscape.html portfolio.html register.html withdrawal.html transactions.html profile.html gold-insights.html"
    },
    "keywords": [],
    "author": "",
@@ -24,6 +25,7 @@
       "axios": "^1.6.7",
       "dotenv": "^16.4.1",
       "lodash": "^4.17.21",
+      "page.js": "^4.13.3",
       "tw-elements": "^1.1.0"
    }
 }

@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async function () {
          }
       } catch (error) {
          console.error("Error verifying token:", error);
+         window.location.href = "login.html";
       }
    } else {
       window.location.href = "login.html";

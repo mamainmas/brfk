@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="./css/index.css" />
       <link rel="stylesheet" href="./css/fonts.css" />
       <link rel="stylesheet" href="./css/custom.css" />
+      <link rel="stylesheet" href="./css/nav.css" />
    </head>
    <body class="bg-darkbg font-Montserrat">
       <!-- LOADER -->
@@ -30,449 +31,208 @@
 
       <!-- LOADER -->
       <!--Main Navigation-->
-      <header>
-         <nav
-            id="sidenav-1"
-            class="fixed left-0 top-0 z-[1035] h-screen w-60 -translate-x-full overflow-hidden bg-darkbg1 text-gray-100 shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] dark:bg-zinc-800 xl:data-[te-sidenav-hidden='false']:translate-x-0"
-            data-te-sidenav-init
-            data-te-sidenav-hidden="false"
-            data-te-sidenav-mode-breakpoint-over="0"
-            data-te-sidenav-mode-breakpoint-side="xl"
-            data-te-sidenav-content="#content"
-            data-te-sidenav-accordion="true"
+      <!-- Navbar start -->
+      <nav
+         id="navbar"
+         class="fixed top-0 z-40 flex w-full mb-8 flex-row justify-between bg-darkbg1 text-gray-100 px-4 sm:justify-between"
+      >
+         <div
+            class="flex flex-row space-x-3 items-center py-2 text-lg text-white sm:flex"
          >
-            <a
-               class="mb-3 flex items-center justify-center py-6 outline-none"
-               href="#!"
-               data-te-ripple-init
-               data-te-ripple-color="primary"
+            <button
+               id="btnSidebarToggler"
+               type="button"
+               class="py-4 text-2xl text-white hover:text-gray-200"
             >
-               <img
-                  id="te-logo"
-                  class="mr-2 w-8"
-                  src="./logo.png"
-                  alt="TE Logo"
-                  draggable="false"
-               />
-               <span>Site Name</span>
-            </a>
-
-            <ul
-               class="relative m-0 list-none px-[0.2rem]"
-               data-te-sidenav-menu-ref
-            >
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="dashboard.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Dashboard</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="portfolio.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Portfolio</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="deposit.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Deposit</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="funds.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Funds</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="account-status.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Account Status</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="marketing-landscape.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Marketing Landscape</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="withdrawal.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Withdrawal</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="transactions.html"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Transaction</span></a
-                  >
-               </li>
-
-               <!-- <li class="relative">
-            <a
-              class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-              href="#!"
-              data-te-sidenav-link-ref
-            >
-              <span
-                class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                  />
-                </svg>
-              </span>
-              <span>Referral</span></a
-            >
-          </li> -->
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="#"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Security</span></a
-                  >
-               </li>
-
-               <li class="relative">
-                  <a
-                     class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-100 outline-none transition duration-300 ease-linear hover:bg-primary-400/10 hover:text-primary-600 hover:outline-none focus:bg-primary-400/10 focus:text-primary-600 focus:outline-none active:bg-primary-400/10 active:text-primary-600 active:outline-none data-[te-sidenav-state-active]:text-primary-600 data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-                     href="#"
-                     data-te-sidenav-link-ref
-                  >
-                     <span
-                        class="mr-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:fill-white [&>svg]:transition [&>svg]:duration-300 [&>svg]:ease-linear group-hover:[&>svg]:fill-primary-600 group-focus:[&>svg]:fill-primary-600 group-active:[&>svg]:fill-primary-600 group-[te-sidenav-state-active]:[&>svg]:fill-primary-600 motion-reduce:[&>svg]:transition-none dark:[&>svg]:fill-gray-300 dark:group-hover:[&>svg]:fill-gray-300"
-                     >
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                        >
-                           <path
-                              d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm96 288H448c17.7 0 32-14.3 32-32V251.8c0-7.6-2.7-15-7.7-20.8l-65.8-76.8c-12.1-14.2-33.7-15-46.9-1.8l-21 21c-10 10-26.4 9.2-35.4-1.6l-39.2-47c-12.6-15.1-35.7-15.4-48.7-.6L135.9 215c-5.1 5.8-7.9 13.3-7.9 21.1v84c0 17.7 14.3 32 32 32z"
-                           />
-                        </svg>
-                     </span>
-                     <span>Sign Out</span></a
-                  >
-               </li>
-            </ul>
-         </nav>
-
-         <nav
-            id="main-navbar"
-            class="fixed z-10 left-0 right-0 top-0 flex w-full flex-nowrap items-center justify-between bg-darkbg py-[1rem] text-gray-500 shadow-lg hover:text-gray-700 focus:text-gray-700 dark:bg-zinc-700 lg:flex-wrap lg:justify-start xl:pl-60"
-            data-te-navbar-ref
-         >
-            <div
-               class="flex w-full flex-wrap items-center justify-between px-4"
-            >
-               <button
-                  data-te-sidenav-toggle-ref
-                  data-te-target="#sidenav-1"
-                  class="block border border-white rounded-md outline-1 outline-white bg-transparent px-2.5 py-0.5 text-gray-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 xl:hidden"
-                  aria-controls="#sidenav-1"
-                  aria-haspopup="true"
+               <svg
+                  id="navClosed"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-8 w-8"
                >
-                  <span
-                     class="block [&>svg]:h-5 [&>svg]:w-5 [&>svg]:text-gray-100"
-                  >
-                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="h-5 w-5"
-                     >
-                        <path
-                           fill-rule="evenodd"
-                           d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                           clip-rule="evenodd"
-                        />
-                     </svg>
-                  </span>
-               </button>
-
-               <form
-                  class="relative ml-4 mr-auto flex flex-wrap items-stretch xl:mx-0"
+                  <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+               </svg>
+               <svg
+                  id="navOpen"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="hidden h-8 w-8"
+               >
+                  <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     d="M6 18L18 6M6 6l12 12"
+                  />
+               </svg>
+            </button>
+            <img
+               src="./logo.png"
+               class="rounded-full py-4 w-8"
+               alt="logo"
+            />
+         </div>
+         <p class="text-white text-center font-bold my-auto">
+            <span class="uppercase text-amber-500" id="my-user-username">
+            </span>
+            <br />
+            <span class="uppercase" id="my-user-aff-bal"></span>
+         </p>
+         <ul class="relative flex items-center space-x-2">
+            <li class="relative" data-te-dropdown-ref>
+               <a
+                  class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
                >
                   <img
-                     src="./logo.png"
-                     class="rounded-full"
-                     style="width: 24px; height: 24px"
+                     src="./user.png"
+                     class="w-8 rounded-full"
                      alt="Avatar"
                      loading="lazy"
                   />
-               </form>
-
-               <ul class="relative flex items-center space-x-2">
-                  <li class="relative" data-te-dropdown-ref>
+               </a>
+               <ul
+                  class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-[10rem] list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-zinc-700 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButton2"
+                  data-te-dropdown-menu-ref
+               >
+                  <li>
                      <a
-                        class="mr-4 flex items-center text-gray-500 hover:text-gray-700 focus:text-gray-700"
-                        href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        data-te-dropdown-toggle-ref
-                        aria-expanded="false"
+                        class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
+                        href="profile.html"
+                        data-te-dropdown-item-ref
+                        >My profile</a
                      >
-                        <span class="dark:text-gray-100 [&>svg]:w-5">
-                           <svg
-                              aria-hidden="true"
-                              focusable="false"
-                              data-prefix="fas"
-                              data-icon="bell"
-                              role="img"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 448 512"
-                           >
-                              <path
-                                 fill="currentColor"
-                                 d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"
-                              ></path>
-                           </svg>
-                        </span>
-                        <span
-                           class="absolute -mt-2.5 ml-2 rounded-full bg-red-600 px-1.5 py-[1px] text-[0.6rem] text-gray-100"
-                           >1</span
-                        >
-                     </a>
-                     <ul
-                        class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-[10rem] list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-zinc-700 [&[data-te-dropdown-show]]:block"
-                        aria-labelledby="navbarDropdownMenuLink"
-                        data-te-dropdown-menu-ref
-                     >
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="#"
-                              data-te-dropdown-item-ref
-                              >Some news</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="#"
-                              data-te-dropdown-item-ref
-                              >Another news</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="#"
-                              data-te-dropdown-item-ref
-                              >Something else here</a
-                           >
-                        </li>
-                     </ul>
                   </li>
-                  <li class="relative" data-te-dropdown-ref>
+                  <li>
                      <a
-                        class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+                        class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
                         href="#"
-                        id="navbarDropdownMenuLink"
-                        role="button"
-                        data-te-dropdown-toggle-ref
-                        aria-expanded="false"
+                        data-te-dropdown-item-ref
+                        >Gift Box</a
                      >
-                        <img
-                           src="./user.png"
-                           class="rounded-full"
-                           style="width: 24px; height: 24px"
-                           alt="Avatar"
-                           loading="lazy"
-                        />
-                     </a>
-                     <ul
-                        class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-[10rem] list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-zinc-700 [&[data-te-dropdown-show]]:block"
-                        aria-labelledby="dropdownMenuButton2"
-                        data-te-dropdown-menu-ref
+                  </li>
+                  <li>
+                     <a
+                        class="cursor-pointer sign-out-acc block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
+                        data-te-dropdown-item-ref
+                        >Logout</a
                      >
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="profile.html"
-                              data-te-dropdown-item-ref
-                              >My profile</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="#"
-                              data-te-dropdown-item-ref
-                              >Gift Box</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="#"
-                              data-te-dropdown-item-ref
-                              >Settings</a
-                           >
-                        </li>
-                        <li>
-                           <a
-                              class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-gray-700 hover:bg-gray-100 active:text-zinc-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-gray-400 dark:text-gray-100 dark:hover:bg-white/30"
-                              href="#"
-                              data-te-dropdown-item-ref
-                              >Logout</a
-                           >
-                        </li>
-                     </ul>
                   </li>
                </ul>
-            </div>
-         </nav>
-      </header>
+            </li>
+         </ul>
+      </nav>
+      <!-- Navbar end -->
+
+      <!-- Sidebar start-->
+      <div id="containerSidebar" class="z-40">
+         <div class="navbar-menu relative z-40">
+            <nav
+               id="sidebar"
+               class="fixed left-0 bottom-0 flex w-3/4 -translate-x-full flex-col overflow-y-auto bg-darkbg1 text-gray-100 pt-6 pb-8 sm:max-w-xs lg:w-80"
+            >
+               <!-- one category / navigation group -->
+               <div class="px-4 pb-6">
+                  <ul class="mb-8 text-sm font-medium">
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="dashboard.html"
+                        >
+                           <span class="select-none">Dashboard</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="portfolio.html"
+                        >
+                           <span class="select-none">Portfolio</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="deposit.html"
+                        >
+                           <span class="select-none">Deposit</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="funds.html"
+                        >
+                           <span class="select-none">Funds</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="account-status.html"
+                        >
+                           <span class="select-none">Account Status</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="marketing-landscape.html"
+                        >
+                           <span class="select-none"
+                              >Marketing Landscape</span
+                           >
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="withdrawal.html"
+                        >
+                           <span class="select-none">Withdrawal</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                           href="transactions.html"
+                        >
+                           <span class="select-none">Transaction</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           class="cursor-pointer sign-out-acc flex items-center rounded py-3 pl-3 pr-4 text-[0.875rem] text-gray-50 hover:bg-darkbg4"
+                        >
+                           <span class="select-none">Logout</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- navigation group end-->
+            </nav>
+         </div>
+         <div class="mx-auto lg:ml-80"></div>
+      </div>
+      <!-- Sidebar end -->
       <section class="flex flex-col space-y-3 lg:flex-row lg:space-x-3">
          <!--Main layout-->
          <main
-            class="mt-16 lg:mb-4 flex flex-col text-gray-100 mx-auto lg:ml-3 w-full space-y-2 lg:w-3/4"
+            class="mt-16 pt-8 lg:mb-4 flex flex-col text-gray-100 mx-auto lg:ml-3 w-full space-y-2 lg:w-3/4"
          >
             <div
                class="lg:hidden w-11/12 bg-darkbg2 mx-auto p-2 space-y-2 flex flex-col justify-center lg:flex-row rounded-md"
@@ -493,12 +253,6 @@
                      USD <span class="aff-cap">0.00</span>
                   </p>
                </div>
-               <!-- <div class="flex flex-col p-2 space-y-2 bg-darkbg2 rounded-lg">
-               <p class="text-lg font-medium">Affiliate Balance</p>
-               <p class="text-xl font-semibold">
-                  USD <span class="aff-bal">0.00</span>
-               </p>
-            </div> -->
                <div
                   class="flex flex-row justify-between px-2 space-x-2 bg-darkbg2 rounded-lg"
                >
@@ -523,46 +277,46 @@
                      USD <span class="aff-bal">0.00</span>
                   </p>
                </div>
-
-               <!-- <div class="flex flex-col px-2">
-                  <p class="text-lg font-medium">Account Portfolio</p>
-                  <p class="text-xl font-semibold">USD0.00</p>
-               </div>
-               <div
-                  class="flex flex-row justify-between px-2 items-center"
-               >
-                  <div class="lg:hidden flex-col">
-                     <p class="text-lg font-medium">Affiliate Capital</p>
-                     <p class="text-xl font-semibold">USD0.00</p>
-                  </div>
-                  <div class="lg:hidden flex flex-col">
-                     <p class="text-lg font-medium">Affiliate Income</p>
-                     <p class="text-xl font-semibold">USD0.00</p>
-                  </div>
-               </div> -->
             </div>
 
             <div
                class="hidden container w-full bg-darkbg2 mx-auto p-2 space-y-2 lg:flex flex-col justify-center lg:flex-row rounded-md"
             >
                <!-- DESKTOP -->
+               <!-- class="hidden lg:flex flex-row justify-between items-center px-2 w-full" -->
                <div
-                  class="hidden lg:flex flex-row justify-between items-center px-2 w-full"
+                  class="hidden lg:grid lg:grid-cols-3 lg:gap-4 px-2 w-full"
                >
                   <div class="flex flex-col">
-                     <p class="text-lg font-medium">Account Portfolio</p>
-                     <p class="text-xl font-semibold">USD0.00</p>
+                     <p class="text-lg font-medium">Account Balance</p>
+                     <p class="text-xl font-semibold">
+                        USD <span class="acc-bal">0.00</span>
+                     </p>
                   </div>
-
-                  <div class="border-l border-gray-300 h-full"></div>
 
                   <div class="flex flex-col">
                      <p class="text-lg font-medium">Affiliate Capital</p>
-                     <p class="text-xl font-semibold">USD0.00</p>
+                     <p class="text-xl font-semibold">
+                        USD <span class="aff-cap">0.00</span>
+                     </p>
                   </div>
                   <div class="flex flex-col">
-                     <p class="text-lg font-medium">Affiliate Income</p>
-                     <p class="text-xl font-semibold">USD0.00</p>
+                     <p class="text-lg font-medium">Affiliate Equity</p>
+                     <p class="text-xl font-semibold">
+                        USD <span class="aff-eq">0.00</span>
+                     </p>
+                  </div>
+                  <div class="flex flex-col">
+                     <p class="text-lg font-medium">Mega Resales</p>
+                     <p class="text-xl font-semibold">
+                        USD <span class="mega-rs">0.00</span>
+                     </p>
+                  </div>
+                  <div class="flex flex-col">
+                     <p class="text-lg font-medium">Affiliate Balance</p>
+                     <p class="text-xl font-semibold">
+                        USD <span class="aff-bal">0.00</span>
+                     </p>
                   </div>
                </div>
                <!-- DESKTOP -->
@@ -1233,7 +987,7 @@
                Add Funds
             </a>
             <div
-               class="mr-deals w-11/12 bg-darkbg2 mx-auto mb-4 p-2 space-y-2 flex justify-between flex-col rounded-md"
+               class="cursor-pointer mr-deals w-11/12 bg-darkbg2 mx-auto mb-4 p-2 space-y-2 flex justify-between flex-col rounded-md"
             >
                <div class="flex justify-between items-center px-2">
                   <div>
@@ -1273,7 +1027,7 @@
          <!-- MAIN MOBILE -->
 
          <main
-            class="container w-1/4 hidden lg:flex flex-col justify-start items-center space-y-3"
+            class="container pt-8 w-1/4 hidden lg:flex flex-col justify-start items-center space-y-3"
          >
             <a
                href="deposit.html"
@@ -1606,11 +1360,18 @@
                         >
                            Add Funds
                         </button>
-                        <button
-                           class="inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                        <a
+                           href="gold-insights.html"
+                           class="insight-btn inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                         >
+                           <!-- <button
+                              data-plan-type="Gold-Insight"
+                              class="insight-btn inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                           >
+                              Insight
+                           </button> -->
                            Insight
-                        </button>
+                        </a>
                      </div>
                      <hr />
                      <div class="w-full flex justify-between items-center">
@@ -1649,7 +1410,8 @@
                            Add Funds
                         </button>
                         <button
-                           class="inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                           data-plan-type="Premium-Insight"
+                           class="insight-btn inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                         >
                            Insight
                         </button>
@@ -1691,7 +1453,8 @@
                            Add Funds
                         </button>
                         <button
-                           class="inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                           data-plan-type="VIP-Insight"
+                           class="insight-btn inline-block rounded bg-darkbg4 px-3 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-100 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                         >
                            Insight
                         </button>
@@ -1723,6 +1486,8 @@
       </div>
 
       <script type="module" src="./src/app/verify-user.js"></script>
+      <script type="module" src="./src/page.js"></script>
+
       <script src="./node_modules/lodash/lodash.min.js"></script>
       <script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
       <script src="https://preline.co/assets/js/hs-apexcharts-helpers.js"></script>
@@ -1739,5 +1504,6 @@
       <script type="module" src="./src/custom-styles.js"></script>
       <script type="module" src="./src/index.js"></script>
       <script type="module" src="./src/app/dashboard.js"></script>
+      <script type="module" src="./src/app/nav.js"></script>
    </body>
 </html>
